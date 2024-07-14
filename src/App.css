@@ -1,0 +1,64 @@
+/* src/App.css */
+:root {
+  --border-color: #ccc;
+  --background-color: #0B101C;
+  --bot-message-bg: #e1e1e1;
+  --user-message-bg: #0084ff;
+  --user-message-color: white;
+  --input-bg-color: #fff;
+  --input-border-color: #ccc;
+  --button-bg-color: #0084ff;
+  --button-hover-bg-color: #005bb5;
+}
+
+.App {
+  margin: 0;
+  padding: 0;
+  /* width: 700px; 
+  height: 600px; */
+  display: flex;
+  flex-direction: column;
+  background-color: var(--background-color);
+  color: white;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+  text-align: center;
+}
+
+.home-screen {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
+.home-screen h1 {
+  margin-bottom: 20px;
+}
+
+.home-screen button {
+  padding: 10px 20px;
+  background-color: var(--button-bg-color);
+  color: var(--user-message-color);
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.home-screen button:hover {
+  background-color: var(--button-hover-bg-color);
+}
+
+
+.startButton{
+  background-color: #282c34;
+  border: none;
+  padding: 5px;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+}

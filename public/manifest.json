@@ -1,0 +1,10 @@
+{
+  "manifest_version": 3,
+  "name": "ChatBot Extension",
+  "version": "1.0",
+  "description": "A React-based chat application as a Chrome extension",
+  "action": {
+    "default_popup": "index.html"
+  },
+  "permissions": ["tabs", "storage"]
+}
