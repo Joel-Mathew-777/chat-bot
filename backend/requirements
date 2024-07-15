@@ -1,0 +1,7 @@
+Flask
+Flask-CORS
+langchain
+langchain_text_splitters
+langchain_community
+langchain_objectbox
+ollama
