@@ -89,9 +89,7 @@ const ChatBot = () => {
       console.error('Error:', error);
       setMessages([...newMessages, { text: 'Sorry, something went wrong.', sender: 'bot' }]);
     } finally {
-      chrome.storage.local.set({ "chat history": [...newMessages, { text: response, sender: 'bot' }] }, function () {
-        // Data's been saved
-      });
+      chrome.storage.local.set({ "chat history": [...newMessages, { text: response, sender: 'bot' }] });
       setIsLoading(false);
     }
   };
@@ -143,3 +141,4 @@ const ChatBot = () => {
 };
 
 export default ChatBot;
+ 

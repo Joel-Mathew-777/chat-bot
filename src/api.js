@@ -1,7 +1,9 @@
 // api.js
 
+const urlBase = "http://127.0.0.1:5000"
+
 export const askQuestion = async (question) => {
-  const response = await fetch('http://localhost:5000/ask', {
+  const response = await fetch(urlBase+'/ask', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -18,7 +20,7 @@ export const askQuestion = async (question) => {
 };
 
 export const getUrlContext = async (url) => {
-  const response = await fetch('http://192.168.1.5:5000/getUrl', {
+  const response = await fetch(urlBase+'/get-url', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
@@ -35,7 +37,7 @@ export const getUrlContext = async (url) => {
 };
 
 export const startChat = async (url) => {
-  const response = await fetch('http://192.168.1.5:5000/start-chat', {
+  const response = await fetch(urlBase+'/start-chat', {
     method: 'POST',
     headers: {
       'Content-Type': 'application/json',
